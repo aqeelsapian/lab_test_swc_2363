@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payment Form</title>
+</head> <link rel="stylesheet" href="style.css">
+
+<body>
+    <form action="payment.php" method="post">
+        <h2>Employee Payment Form</h2>
+        
+        <!-- Employee Name and ID -->
+        <label for="name">Employee Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="staff_id">Staff ID:</label>
+        <input type="text" id="staff_id" name="staff_id" required><br><br>
+
+        <!-- Month Selection -->
+        <label for="month">Select Month:</label>
+        <select id="month" name="month">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select><br><br>
+
+        <!-- Position Selection -->
+        <label for="position">Select Position:</label>
+        <select id="position" name="position">
+            <option>Clerk 1</option>
+            <option>Clerk 2</option>
+            <option>Driver</option>
+            <option>Temp staff</option>
+        </select><br><br>
+
+        <!-- KWSP and SOCSO Deductions -->
+        <label>Deductions:</label><br>
+        <input type="radio" id="kwsp" name="deduction" value="kwsp" checked>
+        <label for="kwsp">KWSP</label><br>
+
+        <input type="radio" id="socso" name="deduction" value="socso">
+        <label for="socso">SOCSO</label><br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Payment</button>
+        <button type="reset">Clear All</button>
+    </form>
+</body>
+</html>

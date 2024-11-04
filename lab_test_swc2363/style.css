@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Container */
+form {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Label Style */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Input Field Style */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Radio Buttons Style */
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Deduction Section */
+label[for="kwsp"],
+label[for="socso"] {
+    display: inline;
+    font-weight: normal;
+    color: #666;
+    font-size: 14px;
+}
+
+label[for="kwsp"] {
+    margin-right: 20px;
+}
+
+/* Button Styles */
+button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Button Container */
+button + button {
+    margin-left: 4%;
+}
+
+/* Align buttons at the bottom */
+button[type="submit"],
+button[type="reset"] {
+    width: 48%;
+}
